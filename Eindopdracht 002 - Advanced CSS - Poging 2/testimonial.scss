@@ -1,0 +1,78 @@
+@import url("_defaults.css");
+
+$default_gray: #c3cfe2;
+$default_white: #fff;
+$default_purplish: #686de0;
+$card_corner_radius: 25px;
+$card_picture_size: 150px;
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* Best UX-afdeling, dit lettertype komt in de buurt. Kunnen jullie ajb aangeven wat het exacte lettertype is? */
+  font-size: 26px;
+  text-align: center;
+}
+
+body {
+  background-color: $default_gray;
+}
+
+.card {
+  /* card stuff */
+  background-color: $default_purplish;
+  width: 550px;
+  height: 700px;
+  border-radius: $card_corner_radius;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0px 15px 20px #888;
+
+  &__top-wrapper {
+    color: #555;
+    padding: 40px;
+    background-color: $default_white;
+    border-top-left-radius: $card_corner_radius;
+    border-top-right-radius: $card_corner_radius;
+    height: 380px;
+    position: relative;
+  }
+
+  &__text {
+    margin-top: 10px;
+    text-align: left;
+    line-height: 2em;
+  }
+
+  &__picture {
+    display: inline-block;
+    position: absolute;
+    transform: translateY(375px);
+    border: 8px solid $default_white;
+    border-radius: 1024px;
+    height: $card_picture_size;
+    width: $card_picture_size;
+  }
+
+  &__name {
+    padding-top: 110px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $default_white;
+    position: relative;
+  }
+
+  &__website {
+    letter-spacing: 1px;
+    padding-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: $default_gray;
+    position: relative;
+  }
+}

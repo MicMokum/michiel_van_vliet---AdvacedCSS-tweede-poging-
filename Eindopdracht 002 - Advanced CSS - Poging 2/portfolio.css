@@ -1,0 +1,82 @@
+@import url("_defaults.css");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  padding-top: 1%;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+.portfolio {
+  display: flexbox;
+}
+.portfolio__item {
+  margin: 1%;
+  border-radius: 5%;
+  display: inline-block;
+  position: relative;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .portfolio__item {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio__item {
+    width: 30%;
+  }
+}
+.portfolio__item--transform {
+  opacity: 0;
+  border-radius: 5%;
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__item--transform:hover {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+.portfolio__image {
+  border-radius: 5%;
+  width: 100%;
+  height: auto;
+}
+.portfolio__button {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.portfolio__button:hover {
+  color: blue;
+}/*# sourceMappingURL=portfolio.css.map */

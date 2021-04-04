@@ -1,0 +1,64 @@
+@import url("_defaults.css");
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* Best UX-afdeling, dit lettertype komt in de buurt. Kunnen jullie ajb aangeven wat het exacte lettertype is? */
+  font-size: 26px;
+  text-align: center;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.card {
+  /* card stuff */
+  background-color: #686de0;
+  width: 550px;
+  height: 700px;
+  border-radius: 25px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 15px 20px #888;
+}
+.card__top-wrapper {
+  color: #555;
+  padding: 40px;
+  background-color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 380px;
+  position: relative;
+}
+.card__text {
+  margin-top: 10px;
+  text-align: left;
+  line-height: 2em;
+}
+.card__picture {
+  display: inline-block;
+  position: absolute;
+  transform: translateY(375px);
+  border: 8px solid #fff;
+  border-radius: 1024px;
+  height: 150px;
+  width: 150px;
+}
+.card__name {
+  padding-top: 110px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  position: relative;
+}
+.card__website {
+  letter-spacing: 1px;
+  padding-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: #c3cfe2;
+  position: relative;
+}/*# sourceMappingURL=testimonial.css.map */
